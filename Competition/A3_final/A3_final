@@ -1,0 +1,112 @@
+import matplotlib.pyplot as plt
+import tensorflow as tf
+import numpy as np
+import pandas as pd
+import scipy
+import sklearn
+from sklearn.preprocessing import LabelEncoder
+from sklearn.utils import shuffle
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.tree import DecisionTreeClassifier
+from scipy.stats.stats import pearsonr
+import pandas.io
+from sklearn.ensemble import RandomForestClassifier
+import seaborn as sb
+import csv
+
+def read_data():
+    df = pd.read_csv("census-comp309.csv")
+    return df
+
+
+def load_training():  # load train test
+    trSet = pd.read_csv("data3000.csv")
+    return trSet
+
+
+def load_test():  # load test set
+    tSet = pd.read_csv("test.csv")
+    return tSet
+
+
+def displaydata(data):
+    print(data)
+    print(data.head())
+
+
+def datashape(data):
+    print(data.describe())
+
+
+# print(data.header())
+
+def datamean(data):
+    # pd.astype()
+    return data.mean()
+    # print(trainTest.mean())
+
+
+def fillna(col):
+    col.fillna(col.value_counts().index[0], inplace=True)
+    return col
+
+
+def replaceWithMostFreq(col):
+    df = load_training()
+    df = df.apply(lambda col: fillna(col))
+
+
+# datashape(load_training())
+#datashape(load_training())#diplaying data
+
+
+# print(datamean(load_training()))
+
+def datacol(data,colname):
+   # dataplot = pd.DataFrame(np.random.rand(1000, 2), columns=['B']).cumsum()
+   # dataplot['A'] = pd.Series(list(range(len(dataplot))))
+   # dataplot.plot(x='A', y='B')
+   d1=data[colname]
+   return data[colname]
+
+def datacorrelation(data):
+    #%matplotlib inline
+    #rcParams['figure.figsize']=5,4
+    sb.set_style('whitegrid')
+    x=data.columns=['m_age','d_age','m_work_hours','d_work_hours','d_smoke']
+    sb.pairplot(x)
+
+#datacorrelation(load_training())
+#datacorrelation(load_training())
+
+def plotoutlier(col):
+   plt.boxplot(col)
+   df=pd.DataFrame(np.random())
+
+#plotoutlier(datacol(load_training(),'m_work_hours'))
+
+#print(type(datacol(load_training(),'m_work_hours')))
+def testplot():
+    #d=load_training()
+    #education = round(pd.crosstab(df['m_education'],df['total_income_hhld_code']))
+    #education=education.reindex(sorted(ed))
+    df=pd.read_csv("data3000.csv")
+    #newdf=df[(df['m_age']!="?")]
+    newdf=pd.to_numeric(df['m_age'],errors='coerce').dropna()
+    plt.boxplot(newdf)
+  #  m=pd.DataFrame(df,columns=['m_age','d_age'])
+   # sb.boxplot(df=pd.melt(m))
+    axes=plt.gca()
+    axes.set_ylim([0,100])
+    plt.xlabel()
+    plt.show()
+testplot()
+
+def replacewithmostFrequent():
+    df=pd.read_csv('data3000.csv')
+    df=df.apply(lambda x:x.fillna(x.value_counts().index[0]))
+    myFile=open('1.csv',"w")
+    writer= csv.writer(myFile)
+    writer.writerows(df)
+    print(df.head())
