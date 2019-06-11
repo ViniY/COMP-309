@@ -1,0 +1,28 @@
+TEST RESULTS
+============
+Classifier= .a/comp309fixedaset/comp309fixedaset 
+Fold 0 : CORRECT=0.6716417910447761 N/C=0.0 
+Fold 1 : CORRECT=0.7293233082706767 N/C=0.0 
+Global Classification Error + N/C:
+0.2995174503422736 
+stddev Global Classification Error + N/C:
+0.028840758612950042 
+Correctly classified:
+0.7004825496577264 
+Global N/C:
+0.0 
+
+TRAIN RESULTS
+============
+Classifier= .a/comp309fixedaset/comp309fixedaset 
+Summary of data, Classifiers: .a/comp309fixedaset/comp309fixedaset 
+Fold 0 : CORRECT=0.7443609022556391 N/C=0.0 
+Fold 1 : CORRECT=0.7238805970149254 N/C=0.0 
+Global Classification Error + N/C:
+0.26587925036471777 
+stddev Global Classification Error + N/C:
+0.010240152620356898 
+Correctly classified:
+0.7341207496352822 
+Global N/C:
+0.0 

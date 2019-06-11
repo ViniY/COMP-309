@@ -1,0 +1,14 @@
+algorithm = Friedman Alligned and Post-Hoc Test
+inputData = "../results/GFS-GP-C.comp309fixedaset/result0s0.tst" "../results/GFS-GP-C.comp309fixedaset/result1s0.tst" "../results/GFS-GP-C.comp309fixedaset/result2s0.tst" "../results/GFS-GP-C.comp309fixedaset/result3s0.tst" "../results/GFS-GP-C.comp309fixedaset/result4s0.tst" "../results/GFS-GP-C.comp309fixedaset/result5s0.tst" "../results/GFS-GP-C.comp309fixedaset/result6s0.tst" "../results/GFS-GP-C.comp309fixedaset/result7s0.tst" "../results/GFS-GP-C.comp309fixedaset/result8s0.tst" "../results/GFS-GP-C.comp309fixedaset/result9s0.tst" "../results/GFS-GP-C.comp309fixedaset/result0s0.tra" "../results/GFS-GP-C.comp309fixedaset/result1s0.tra" "../results/GFS-GP-C.comp309fixedaset/result2s0.tra" "../results/GFS-GP-C.comp309fixedaset/result3s0.tra" "../results/GFS-GP-C.comp309fixedaset/result4s0.tra" "../results/GFS-GP-C.comp309fixedaset/result5s0.tra" "../results/GFS-GP-C.comp309fixedaset/result6s0.tra" "../results/GFS-GP-C.comp309fixedaset/result7s0.tra" "../results/GFS-GP-C.comp309fixedaset/result8s0.tra" "../results/GFS-GP-C.comp309fixedaset/result9s0.tra" 
+outputData = "../results/Clas-FriedmanAligned-ST/TSTGFS-GP-C/result0s0.stat" 
+
+subAlgorithm = Multiple
+Apply-Iman-Davenport = YES
+Apply-Bonferroni-Dunn = YES
+Apply-Holm = YES
+Apply-Hochberg = YES
+Apply-Hommel = YES
+Apply-Holland = YES
+Apply-Rom = YES
+Apply-Finner = YES
+Apply-Li = YES

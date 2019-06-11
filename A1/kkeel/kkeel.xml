@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph objective="0" IDExperiment="3" typeExperiment="0">
+    <experimentSeed>12345678</experimentSeed>
+    <nameGraph>C:\Users\vince\Desktop\Comp309A1\kkeel\kkeel.xml</nameGraph>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="1" typeNode="1" xsi:type="algorithm">
+        <positionNode positionX="498" positionY="197"/>
+        <Description>
+            <subType>5</subType>
+            <name>GFS-GP-C</name>
+            <path>file:./algorithm/methods/</path>
+            <jarName>ClassifierFuzzyGP.jar</jarName>
+        </Description>
+        <Parameters>
+            <AlgorithmType>GP Fuzzy Rule Learning</AlgorithmType>
+            <numParameters>18</numParameters>
+            <Probabilistic>true</Probabilistic>
+            <numOutputs>1</numOutputs>
+            <numInputs>0</numInputs>
+            <numExecutions>1</numExecutions>
+            <descriptions>subAlgorithm</descriptions>
+            <descriptions>dataformat</descriptions>
+            <descriptions>numlabels</descriptions>
+            <descriptions>numrules</descriptions>
+            <descriptions>outlabel</descriptions>
+            <descriptions>popsize</descriptions>
+            <descriptions>numisland</descriptions>
+            <descriptions>steady</descriptions>
+            <descriptions>numitera</descriptions>
+            <descriptions>toursize</descriptions>
+            <descriptions>probmuta</descriptions>
+            <descriptions>amplmuta</descriptions>
+            <descriptions>probmigra</descriptions>
+            <descriptions>proboptimlocal</descriptions>
+            <descriptions>numoptimlocal</descriptions>
+            <descriptions>idoptimlocal</descriptions>
+            <descriptions>probmutaga</descriptions>
+            <descriptions>maxtreeheight</descriptions>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>integer</parameterType>
+            <domain>
+                <string xsi:type="java:java.lang.String">ClasifFuzzyGP</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">keel</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">2</string>
+                <string xsi:type="java:java.lang.String">7</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">1</string>
+                <string xsi:type="java:java.lang.String">100</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">CFGP</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">10</string>
+                <string xsi:type="java:java.lang.String">1000</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">1</string>
+                <string xsi:type="java:java.lang.String">10</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">100000</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">3</string>
+                <string xsi:type="java:java.lang.String">10</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">100</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">0</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">6</string>
+                <string xsi:type="java:java.lang.String">100</string>
+            </domain>
+            <defaultValue>ClasifFuzzyGP</defaultValue>
+            <defaultValue>keel</defaultValue>
+            <defaultValue>3</defaultValue>
+            <defaultValue>8</defaultValue>
+            <defaultValue>CFGP</defaultValue>
+            <defaultValue>30</defaultValue>
+            <defaultValue>2</defaultValue>
+            <defaultValue>1</defaultValue>
+            <defaultValue>10000</defaultValue>
+            <defaultValue>4</defaultValue>
+            <defaultValue>0.01</defaultValue>
+            <defaultValue>0.1</defaultValue>
+            <defaultValue>0.001</defaultValue>
+            <defaultValue>0.00</defaultValue>
+            <defaultValue>0</defaultValue>
+            <defaultValue>0</defaultValue>
+            <defaultValue>0.5</defaultValue>
+            <defaultValue>8</defaultValue>
+            <value>ClasifFuzzyGP</value>
+            <value>keel</value>
+            <value>3</value>
+            <value>8</value>
+            <value>CFGP</value>
+            <value>30</value>
+            <value>2</value>
+            <value>1</value>
+            <value>10000</value>
+            <value>4</value>
+            <value>0.01</value>
+            <value>0.1</value>
+            <value>0.001</value>
+            <value>0.00</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0.5</value>
+            <value>8</value>
+            <hidden>1</hidden>
+            <hidden>1</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>1</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+        </Parameters>
+    </Node>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="2" typeNode="7" xsi:type="test">
+        <positionNode positionX="650" positionY="199"/>
+        <Description>
+            <subType>10</subType>
+            <name>Vis-Clas-Check</name>
+            <path>file:./algorithm/tests/</path>
+            <jarName>ClasifTest_Summary.jar</jarName>
+        </Description>
+        <Parameters>
+            <AlgorithmType>Summary of Classification probs.</AlgorithmType>
+            <numParameters>3</numParameters>
+            <Probabilistic>true</Probabilistic>
+            <numOutputs>0</numOutputs>
+            <numInputs>1</numInputs>
+            <numExecutions>1</numExecutions>
+            <descriptions>subAlgorithm</descriptions>
+            <descriptions>dataformat</descriptions>
+            <descriptions>outlabel</descriptions>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <domain>
+                <string xsi:type="java:java.lang.String">StatCheckCL</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">keel</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">CHK</string>
+            </domain>
+            <defaultValue>StatCheckCL</defaultValue>
+            <defaultValue>keel</defaultValue>
+            <defaultValue>CHK</defaultValue>
+            <value>StatCheckCL</value>
+            <value>keel</value>
+            <value>CHK</value>
+            <hidden>1</hidden>
+            <hidden>1</hidden>
+            <hidden>1</hidden>
+        </Parameters>
+    </Node>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="0" typeNode="0" xsi:type="data-set">
+        <positionNode positionX="292" positionY="186"/>
+        <Description>
+            <subType>0</subType>
+            <name>comp309fixedaset</name>
+            <path>/data/</path>
+            <jarName>comp309fixedaset.jar</jarName>
+        </Description>
+        <Files>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-1tra.dat,comp309fixedaset-10-1tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-2tra.dat,comp309fixedaset-10-2tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-3tra.dat,comp309fixedaset-10-3tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-4tra.dat,comp309fixedaset-10-4tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-5tra.dat,comp309fixedaset-10-5tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-6tra.dat,comp309fixedaset-10-6tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-7tra.dat,comp309fixedaset-10-7tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-8tra.dat,comp309fixedaset-10-8tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-9tra.dat,comp309fixedaset-10-9tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-10tra.dat,comp309fixedaset-10-10tst.dat</string>
+        </Files>
+    </Node>
+    <Edge>
+        <originNode>2</originNode>
+        <destinyNode>0</destinyNode>
+    </Edge>
+    <Edge>
+        <originNode>0</originNode>
+        <destinyNode>1</destinyNode>
+    </Edge>
+</Graph>

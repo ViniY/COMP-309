@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config0s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config1s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config2s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config3s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config4s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config5s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config6s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config7s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config8s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClassifierFuzzyGP.jar</executableFile>
+    <scriptFile>./GFS-GP-C/comp309fixedaset_using/config9s0.txt</scriptFile>
+  </sentence>
+  <sentence>
+    <command>java</command>
+    <option>-Xmx512000000</option>
+    <option />
+    <option>-jar</option>
+    <option />
+    <option />
+    <executableFile>../exe/ClasifTest_Summary.jar</executableFile>
+    <scriptFile>./Vis-Clas-Check/TSTGFS-GP-C/config0s0.txt</scriptFile>
+  </sentence>
+</execution>
+

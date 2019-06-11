@@ -1,0 +1,23 @@
+algorithm = GP Fuzzy Rule Learning
+inputData = "../datasets/comp309fixedaset_using/comp309fixedaset_using-10-8tra.dat" "../datasets/comp309fixedaset_using/comp309fixedaset_using-10-8tra.dat" "../datasets/comp309fixedaset_using/comp309fixedaset_using-10-8tst.dat" 
+outputData = "../results/GFS-GP-C.comp309fixedaset_using/result7s0.tra" "../results/GFS-GP-C.comp309fixedaset_using/result7s0.tst" "../results/GFS-GP-C.comp309fixedaset_using/result7s0e0.txt"  
+
+seed = 1286082570
+subAlgorithm = ClasifFuzzyGP
+dataformat = keel
+numlabels = 3
+numrules = 8
+outlabel = CFGP
+popsize = 30
+numisland = 2
+steady = 1
+numitera = 10000
+toursize = 4
+probmuta = 0.01
+amplmuta = 0.1
+probmigra = 0.001
+proboptimlocal = 0.00
+numoptimlocal = 0
+idoptimlocal = 0
+probmutaga = 0.5
+maxtreeheight = 8

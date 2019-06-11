@@ -1,0 +1,22 @@
+algorithm = xcs
+inputData = "../datasets/comp309fixedaset/comp309fixedaset-10-10tra.dat" "../datasets/comp309fixedaset/comp309fixedaset-10-10tra.dat" "../datasets/comp309fixedaset/comp309fixedaset-10-10tst.dat" 
+outputData = "../results/UCS-C.comp309fixedaset/result9s0.tra" "../results/UCS-C.comp309fixedaset/result9s0.tst" "../results/UCS-C.comp309fixedaset/result9s0e0.txt"  
+
+seed = 1286082570
+numberOfExplores = 100000
+popSize = 6400
+delta = 0.1
+nu = 10.0
+acc_0 = 0.99
+pX = 0.8
+pM = 0.04
+theta_ga = 50.0
+theta_del = 50.0
+theta_sub = 500.0
+doGASubsumption = true
+typeOfSelection = RWS
+tournamentSize = 0.4
+typeOfMutation = free
+typeOfCrossover = 2PT
+r_0 = 0.6
+m_0 = 0.1

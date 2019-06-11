@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph objective="0" IDExperiment="6" typeExperiment="0">
+    <experimentSeed>12345678</experimentSeed>
+    <nameGraph>C:\Users\vince\Desktop\Comp309A1\KeelTest1.xml</nameGraph>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="5" typeNode="0" xsi:type="data-set">
+        <positionNode positionX="201" positionY="169"/>
+        <Description>
+            <subType>0</subType>
+            <name>comp309fixedaset</name>
+            <path>/data/</path>
+            <jarName>comp309fixedaset.jar</jarName>
+        </Description>
+        <Files>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-1tra.dat,comp309fixedaset-10-1tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-2tra.dat,comp309fixedaset-10-2tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-3tra.dat,comp309fixedaset-10-3tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-4tra.dat,comp309fixedaset-10-4tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-5tra.dat,comp309fixedaset-10-5tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-6tra.dat,comp309fixedaset-10-6tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-7tra.dat,comp309fixedaset-10-7tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-8tra.dat,comp309fixedaset-10-8tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-9tra.dat,comp309fixedaset-10-9tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-10tra.dat,comp309fixedaset-10-10tst.dat</string>
+        </Files>
+    </Node>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="1" typeNode="1" xsi:type="algorithm">
+        <positionNode positionX="348" positionY="165"/>
+        <Description>
+            <subType>5</subType>
+            <name>GFS-GP-C</name>
+            <path>file:./algorithm/methods/</path>
+            <jarName>ClassifierFuzzyGP.jar</jarName>
+        </Description>
+        <Parameters>
+            <AlgorithmType>GP Fuzzy Rule Learning</AlgorithmType>
+            <numParameters>18</numParameters>
+            <Probabilistic>true</Probabilistic>
+            <numOutputs>1</numOutputs>
+            <numInputs>0</numInputs>
+            <numExecutions>1</numExecutions>
+            <descriptions>subAlgorithm</descriptions>
+            <descriptions>dataformat</descriptions>
+            <descriptions>numlabels</descriptions>
+            <descriptions>numrules</descriptions>
+            <descriptions>outlabel</descriptions>
+            <descriptions>popsize</descriptions>
+            <descriptions>numisland</descriptions>
+            <descriptions>steady</descriptions>
+            <descriptions>numitera</descriptions>
+            <descriptions>toursize</descriptions>
+            <descriptions>probmuta</descriptions>
+            <descriptions>amplmuta</descriptions>
+            <descriptions>probmigra</descriptions>
+            <descriptions>proboptimlocal</descriptions>
+            <descriptions>numoptimlocal</descriptions>
+            <descriptions>idoptimlocal</descriptions>
+            <descriptions>probmutaga</descriptions>
+            <descriptions>maxtreeheight</descriptions>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>integer</parameterType>
+            <domain>
+                <string xsi:type="java:java.lang.String">ClasifFuzzyGP</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">keel</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">2</string>
+                <string xsi:type="java:java.lang.String">7</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">1</string>
+                <string xsi:type="java:java.lang.String">100</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">CFGP</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">10</string>
+                <string xsi:type="java:java.lang.String">1000</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">1</string>
+                <string xsi:type="java:java.lang.String">10</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">100000</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">3</string>
+                <string xsi:type="java:java.lang.String">10</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">100</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">0</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">6</string>
+                <string xsi:type="java:java.lang.String">100</string>
+            </domain>
+            <defaultValue>ClasifFuzzyGP</defaultValue>
+            <defaultValue>keel</defaultValue>
+            <defaultValue>3</defaultValue>
+            <defaultValue>8</defaultValue>
+            <defaultValue>CFGP</defaultValue>
+            <defaultValue>30</defaultValue>
+            <defaultValue>2</defaultValue>
+            <defaultValue>1</defaultValue>
+            <defaultValue>10000</defaultValue>
+            <defaultValue>4</defaultValue>
+            <defaultValue>0.01</defaultValue>
+            <defaultValue>0.1</defaultValue>
+            <defaultValue>0.001</defaultValue>
+            <defaultValue>0.00</defaultValue>
+            <defaultValue>0</defaultValue>
+            <defaultValue>0</defaultValue>
+            <defaultValue>0.5</defaultValue>
+            <defaultValue>8</defaultValue>
+            <value>ClasifFuzzyGP</value>
+            <value>keel</value>
+            <value>3</value>
+            <value>8</value>
+            <value>CFGP</value>
+            <value>30</value>
+            <value>2</value>
+            <value>1</value>
+            <value>10000</value>
+            <value>4</value>
+            <value>0.01</value>
+            <value>0.1</value>
+            <value>0.001</value>
+            <value>0.00</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0.5</value>
+            <value>8</value>
+            <hidden>1</hidden>
+            <hidden>1</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>1</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result0s0.tra</trainingOutputs>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result1s0.tra</trainingOutputs>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result2s0.tra</trainingOutputs>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result3s0.tra</trainingOutputs>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result4s0.tra</trainingOutputs>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result5s0.tra</trainingOutputs>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result6s0.tra</trainingOutputs>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result7s0.tra</trainingOutputs>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result8s0.tra</trainingOutputs>
+            <trainingOutputs>../results/GFS-GP-C.comp309fixedaset/result9s0.tra</trainingOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result0s0.tst</testOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result1s0.tst</testOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result2s0.tst</testOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result3s0.tst</testOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result4s0.tst</testOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result5s0.tst</testOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result6s0.tst</testOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result7s0.tst</testOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result8s0.tst</testOutputs>
+            <testOutputs>../results/GFS-GP-C.comp309fixedaset/result9s0.tst</testOutputs>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-1tra.dat</trainingValues>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-2tra.dat</trainingValues>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-3tra.dat</trainingValues>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-4tra.dat</trainingValues>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-5tra.dat</trainingValues>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-6tra.dat</trainingValues>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-7tra.dat</trainingValues>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-8tra.dat</trainingValues>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-9tra.dat</trainingValues>
+            <trainingValues>../datasets/comp309fixedaset/comp309fixedaset-10-10tra.dat</trainingValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-1tst.dat</testValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-2tst.dat</testValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-3tst.dat</testValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-4tst.dat</testValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-5tst.dat</testValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-6tst.dat</testValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-7tst.dat</testValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-8tst.dat</testValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-9tst.dat</testValues>
+            <testValues>../datasets/comp309fixedaset/comp309fixedaset-10-10tst.dat</testValues>
+            <configurations>/GFS-GP-C/comp309fixedaset/config0s0.txt</configurations>
+            <configurations>/GFS-GP-C/comp309fixedaset/config1s0.txt</configurations>
+            <configurations>/GFS-GP-C/comp309fixedaset/config2s0.txt</configurations>
+            <configurations>/GFS-GP-C/comp309fixedaset/config3s0.txt</configurations>
+            <configurations>/GFS-GP-C/comp309fixedaset/config4s0.txt</configurations>
+            <configurations>/GFS-GP-C/comp309fixedaset/config5s0.txt</configurations>
+            <configurations>/GFS-GP-C/comp309fixedaset/config6s0.txt</configurations>
+            <configurations>/GFS-GP-C/comp309fixedaset/config7s0.txt</configurations>
+            <configurations>/GFS-GP-C/comp309fixedaset/config8s0.txt</configurations>
+            <configurations>/GFS-GP-C/comp309fixedaset/config9s0.txt</configurations>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result0s0e0.txt&quot; </string>
+            </additionalOutputs>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result1s0e0.txt&quot; </string>
+            </additionalOutputs>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result2s0e0.txt&quot; </string>
+            </additionalOutputs>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result3s0e0.txt&quot; </string>
+            </additionalOutputs>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result4s0e0.txt&quot; </string>
+            </additionalOutputs>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result5s0e0.txt&quot; </string>
+            </additionalOutputs>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result6s0e0.txt&quot; </string>
+            </additionalOutputs>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result7s0e0.txt&quot; </string>
+            </additionalOutputs>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result8s0e0.txt&quot; </string>
+            </additionalOutputs>
+            <additionalOutputs xsi:type="java:java.util.Vector">
+                <string
+                    xsi:type="java:java.lang.String">&quot;../results/GFS-GP-C.comp309fixedaset/result9s0e0.txt&quot; </string>
+            </additionalOutputs>
+        </Parameters>
+    </Node>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="2" typeNode="7" xsi:type="test">
+        <positionNode positionX="339" positionY="267"/>
+        <Description>
+            <subType>7</subType>
+            <name>Clas-FriedmanAligned-ST</name>
+            <path>file:./algorithm/tests/</path>
+            <jarName>Clas_FriedmanAlligned.jar</jarName>
+        </Description>
+        <Parameters>
+            <AlgorithmType>Friedman Alligned and Post-Hoc Test</AlgorithmType>
+            <numParameters>10</numParameters>
+            <Probabilistic>false</Probabilistic>
+            <numOutputs>0</numOutputs>
+            <numInputs>0</numInputs>
+            <numExecutions>1</numExecutions>
+            <descriptions>subAlgorithm</descriptions>
+            <descriptions>Apply-Iman-Davenport</descriptions>
+            <descriptions>Apply-Bonferroni-Dunn</descriptions>
+            <descriptions>Apply-Holm</descriptions>
+            <descriptions>Apply-Hochberg</descriptions>
+            <descriptions>Apply-Hommel</descriptions>
+            <descriptions>Apply-Holland</descriptions>
+            <descriptions>Apply-Rom</descriptions>
+            <descriptions>Apply-Finner</descriptions>
+            <descriptions>Apply-Li</descriptions>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <domain>
+                <string xsi:type="java:java.lang.String">Multiple</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">YES</string>
+                <string xsi:type="java:java.lang.String">NO</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">YES</string>
+                <string xsi:type="java:java.lang.String">NO</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">YES</string>
+                <string xsi:type="java:java.lang.String">NO</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">YES</string>
+                <string xsi:type="java:java.lang.String">NO</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">YES</string>
+                <string xsi:type="java:java.lang.String">NO</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">YES</string>
+                <string xsi:type="java:java.lang.String">NO</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">YES</string>
+                <string xsi:type="java:java.lang.String">NO</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">YES</string>
+                <string xsi:type="java:java.lang.String">NO</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">YES</string>
+                <string xsi:type="java:java.lang.String">NO</string>
+            </domain>
+            <defaultValue>Multiple</defaultValue>
+            <defaultValue>YES</defaultValue>
+            <defaultValue>YES</defaultValue>
+            <defaultValue>YES</defaultValue>
+            <defaultValue>YES</defaultValue>
+            <defaultValue>YES</defaultValue>
+            <defaultValue>YES</defaultValue>
+            <defaultValue>YES</defaultValue>
+            <defaultValue>YES</defaultValue>
+            <defaultValue>YES</defaultValue>
+            <value>Multiple</value>
+            <value>YES</value>
+            <value>YES</value>
+            <value>YES</value>
+            <value>YES</value>
+            <value>YES</value>
+            <value>YES</value>
+            <value>YES</value>
+            <value>YES</value>
+            <value>YES</value>
+            <hidden>1</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <trainingOutputs>../results/Clas-FriedmanAligned-ST/TSTGFS-GP-C/result0s0.stat</trainingOutputs>
+            <configurations>/Clas-FriedmanAligned-ST/TSTGFS-GP-C/config0s0.txt</configurations>
+        </Parameters>
+    </Node>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="3" typeNode="7" xsi:type="test">
+        <positionNode positionX="550" positionY="217"/>
+        <Description>
+            <subType>10</subType>
+            <name>Vis-Clas-Check</name>
+            <path>file:./algorithm/tests/</path>
+            <jarName>ClasifTest_Summary.jar</jarName>
+        </Description>
+        <Parameters>
+            <AlgorithmType>Summary of Classification probs.</AlgorithmType>
+            <numParameters>3</numParameters>
+            <Probabilistic>true</Probabilistic>
+            <numOutputs>0</numOutputs>
+            <numInputs>1</numInputs>
+            <numExecutions>1</numExecutions>
+            <descriptions>subAlgorithm</descriptions>
+            <descriptions>dataformat</descriptions>
+            <descriptions>outlabel</descriptions>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <domain>
+                <string xsi:type="java:java.lang.String">StatCheckCL</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">keel</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">CHK</string>
+            </domain>
+            <defaultValue>StatCheckCL</defaultValue>
+            <defaultValue>keel</defaultValue>
+            <defaultValue>CHK</defaultValue>
+            <value>StatCheckCL</value>
+            <value>keel</value>
+            <value>CHK</value>
+            <hidden>1</hidden>
+            <hidden>1</hidden>
+            <hidden>1</hidden>
+            <trainingOutputs>../results/Vis-Clas-Check/TSTGFS-GP-C/result0s0.stat</trainingOutputs>
+            <configurations>/Vis-Clas-Check/TSTGFS-GP-C/config0s0.txt</configurations>
+        </Parameters>
+    </Node>
+    <Edge>
+        <originNode>0</originNode>
+        <destinyNode>1</destinyNode>
+    </Edge>
+    <Edge>
+        <originNode>1</originNode>
+        <destinyNode>3</destinyNode>
+    </Edge>
+    <Edge>
+        <originNode>1</originNode>
+        <destinyNode>2</destinyNode>
+    </Edge>
+</Graph>

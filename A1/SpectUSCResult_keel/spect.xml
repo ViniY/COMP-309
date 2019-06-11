@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph objective="0" IDExperiment="3" typeExperiment="0">
+    <experimentSeed>12345678</experimentSeed>
+    <nameGraph>C:\Users\vince\Desktop\Comp309A1\SpectUSCResult_keel\spect.xml</nameGraph>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="0" typeNode="0" xsi:type="data-set">
+        <positionNode positionX="267" positionY="254"/>
+        <Description>
+            <subType>0</subType>
+            <name>comp309fixedaset</name>
+            <path>/data/</path>
+            <jarName>comp309fixedaset.jar</jarName>
+        </Description>
+        <Files>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-1tra.dat,comp309fixedaset-10-1tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-2tra.dat,comp309fixedaset-10-2tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-3tra.dat,comp309fixedaset-10-3tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-4tra.dat,comp309fixedaset-10-4tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-5tra.dat,comp309fixedaset-10-5tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-6tra.dat,comp309fixedaset-10-6tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-7tra.dat,comp309fixedaset-10-7tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-8tra.dat,comp309fixedaset-10-8tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-9tra.dat,comp309fixedaset-10-9tst.dat</string>
+            <string xsi:type="java:java.lang.String">comp309fixedaset-10-10tra.dat,comp309fixedaset-10-10tst.dat</string>
+        </Files>
+    </Node>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="1" typeNode="1" xsi:type="algorithm">
+        <positionNode positionX="382" positionY="250"/>
+        <Description>
+            <subType>5</subType>
+            <name>UCS-C</name>
+            <path>file:./algorithm/methods/</path>
+            <jarName>UCS.jar</jarName>
+        </Description>
+        <Parameters>
+            <AlgorithmType>xcs</AlgorithmType>
+            <numParameters>17</numParameters>
+            <Probabilistic>true</Probabilistic>
+            <numOutputs>1</numOutputs>
+            <numInputs>0</numInputs>
+            <numExecutions>1</numExecutions>
+            <descriptions>numberOfExplores</descriptions>
+            <descriptions>popSize</descriptions>
+            <descriptions>delta</descriptions>
+            <descriptions>nu</descriptions>
+            <descriptions>acc_0</descriptions>
+            <descriptions>pX</descriptions>
+            <descriptions>pM</descriptions>
+            <descriptions>theta_ga</descriptions>
+            <descriptions>theta_del</descriptions>
+            <descriptions>theta_sub</descriptions>
+            <descriptions>doGASubsumption</descriptions>
+            <descriptions>typeOfSelection</descriptions>
+            <descriptions>tournamentSize</descriptions>
+            <descriptions>typeOfMutation</descriptions>
+            <descriptions>typeOfCrossover</descriptions>
+            <descriptions>r_0</descriptions>
+            <descriptions>m_0</descriptions>
+            <parameterType>integer</parameterType>
+            <parameterType>integer</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>real</parameterType>
+            <parameterType>real</parameterType>
+            <domain>
+                <string xsi:type="java:java.lang.String">1000</string>
+                <string xsi:type="java:java.lang.String">100000000</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">50</string>
+                <string xsi:type="java:java.lang.String">50000</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">1.0</string>
+                <string xsi:type="java:java.lang.String">20.0</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0.1</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">10</string>
+                <string xsi:type="java:java.lang.String">1000</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">10</string>
+                <string xsi:type="java:java.lang.String">10000</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">10</string>
+                <string xsi:type="java:java.lang.String">10000</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">true</string>
+                <string xsi:type="java:java.lang.String">false</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">RWS</string>
+                <string xsi:type="java:java.lang.String">Tournament</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">niched</string>
+                <string xsi:type="java:java.lang.String">free</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">2PT</string>
+                <string xsi:type="java:java.lang.String">uniform</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">0</string>
+                <string xsi:type="java:java.lang.String">1</string>
+            </domain>
+            <defaultValue>100000</defaultValue>
+            <defaultValue>6400</defaultValue>
+            <defaultValue>0.1</defaultValue>
+            <defaultValue>10.0</defaultValue>
+            <defaultValue>0.99</defaultValue>
+            <defaultValue>0.8</defaultValue>
+            <defaultValue>0.04</defaultValue>
+            <defaultValue>50.0</defaultValue>
+            <defaultValue>50.0</defaultValue>
+            <defaultValue>500.0</defaultValue>
+            <defaultValue>true</defaultValue>
+            <defaultValue>RWS</defaultValue>
+            <defaultValue>0.4</defaultValue>
+            <defaultValue>free</defaultValue>
+            <defaultValue>2PT</defaultValue>
+            <defaultValue>0.6</defaultValue>
+            <defaultValue>0.1</defaultValue>
+            <value>100000</value>
+            <value>6400</value>
+            <value>0.1</value>
+            <value>10.0</value>
+            <value>0.99</value>
+            <value>0.8</value>
+            <value>0.04</value>
+            <value>50.0</value>
+            <value>50.0</value>
+            <value>500.0</value>
+            <value>true</value>
+            <value>RWS</value>
+            <value>0.4</value>
+            <value>free</value>
+            <value>2PT</value>
+            <value>0.6</value>
+            <value>0.1</value>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+            <hidden>0</hidden>
+        </Parameters>
+    </Node>
+    <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        IDNode="2" typeNode="7" xsi:type="test">
+        <positionNode positionX="524" positionY="226"/>
+        <Description>
+            <subType>10</subType>
+            <name>Vis-Clas-Check</name>
+            <path>file:./algorithm/tests/</path>
+            <jarName>ClasifTest_Summary.jar</jarName>
+        </Description>
+        <Parameters>
+            <AlgorithmType>Summary of Classification probs.</AlgorithmType>
+            <numParameters>3</numParameters>
+            <Probabilistic>true</Probabilistic>
+            <numOutputs>0</numOutputs>
+            <numInputs>1</numInputs>
+            <numExecutions>1</numExecutions>
+            <descriptions>subAlgorithm</descriptions>
+            <descriptions>dataformat</descriptions>
+            <descriptions>outlabel</descriptions>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <parameterType>list</parameterType>
+            <domain>
+                <string xsi:type="java:java.lang.String">StatCheckCL</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">keel</string>
+            </domain>
+            <domain>
+                <string xsi:type="java:java.lang.String">CHK</string>
+            </domain>
+            <defaultValue>StatCheckCL</defaultValue>
+            <defaultValue>keel</defaultValue>
+            <defaultValue>CHK</defaultValue>
+            <value>StatCheckCL</value>
+            <value>keel</value>
+            <value>CHK</value>
+            <hidden>1</hidden>
+            <hidden>1</hidden>
+            <hidden>1</hidden>
+        </Parameters>
+    </Node>
+    <Edge>
+        <originNode>0</originNode>
+        <destinyNode>1</destinyNode>
+    </Edge>
+    <Edge>
+        <originNode>1</originNode>
+        <destinyNode>2</destinyNode>
+    </Edge>
+</Graph>

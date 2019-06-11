@@ -1,0 +1,8 @@
+algorithm = Summary of Classification probs.
+inputData = "../results/UCS-C.comp309fixedaset/result0s0.tst" "../results/UCS-C.comp309fixedaset/result1s0.tst" "../results/UCS-C.comp309fixedaset/result2s0.tst" "../results/UCS-C.comp309fixedaset/result3s0.tst" "../results/UCS-C.comp309fixedaset/result4s0.tst" "../results/UCS-C.comp309fixedaset/result5s0.tst" "../results/UCS-C.comp309fixedaset/result6s0.tst" "../results/UCS-C.comp309fixedaset/result7s0.tst" "../results/UCS-C.comp309fixedaset/result8s0.tst" "../results/UCS-C.comp309fixedaset/result9s0.tst" "../results/UCS-C.comp309fixedaset/result0s0.tra" "../results/UCS-C.comp309fixedaset/result1s0.tra" "../results/UCS-C.comp309fixedaset/result2s0.tra" "../results/UCS-C.comp309fixedaset/result3s0.tra" "../results/UCS-C.comp309fixedaset/result4s0.tra" "../results/UCS-C.comp309fixedaset/result5s0.tra" "../results/UCS-C.comp309fixedaset/result6s0.tra" "../results/UCS-C.comp309fixedaset/result7s0.tra" "../results/UCS-C.comp309fixedaset/result8s0.tra" "../results/UCS-C.comp309fixedaset/result9s0.tra" 
+outputData = "../results/Vis-Clas-Check/TSTUCS-C/result0s0.stat" 
+
+seed = 1343278692
+subAlgorithm = StatCheckCL
+dataformat = keel
+outlabel = CHK
