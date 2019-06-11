@@ -1,0 +1,214 @@
+{
+	"flow_name" : "final_A2",
+	"steps" : [
+		{
+			"class" : "weka.knowledgeflow.steps.Classifier",
+			"properties" : {
+				"classifier" : {
+					"type" : "optionHandler",
+					"class" : "weka.classifiers.functions.LinearRegression",
+					"options" : "-S 0 -R 1.0E-8 -num-decimal-places 4"
+				},
+				"loadClassifierFileName" : "",
+				"name" : "LinearRegression22",
+				"resetIncrementalClassifier" : false,
+				"updateIncrementalClassifier" : true
+			},
+			"connections" : {
+				"batchClassifier" : [
+					"ClassifierPerformanceEvaluator22"
+				],
+				"text" : [
+					"TextViewer222"
+				]
+			},
+			"coordinates" : "849,357"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.CrossValidationFoldMaker",
+			"properties" : {
+				"name" : "CrossValidationFoldMaker22",
+				"numFolds" : "10",
+				"preserveOrder" : false,
+				"seed" : "1"
+			},
+			"connections" : {
+				"trainingSet" : [
+					"LinearRegression22"
+				],
+				"testSet" : [
+					"LinearRegression22"
+				]
+			},
+			"coordinates" : "848,192"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.TextViewer",
+			"properties" : {
+				"name" : "TextViewer32"
+			},
+			"connections" : {
+			},
+			"coordinates" : "1014,499"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.ClassifierPerformanceEvaluator",
+			"properties" : {
+				"costMatrixString" : "",
+				"errorPlotPointSizeProportionalToMargin" : false,
+				"evaluateWithRespectToCosts" : false,
+				"evaluationMetricsToOutput" : "Correct,Incorrect,Kappa,Total cost,Average cost,KB relative,KB information,Correlation,Complexity 0,Complexity scheme,Complexity improvement,MAE,RMSE,RAE,RRSE,TP rate,FP rate,Precision,Recall,F-measure,MCC,ROC area,PRC area",
+				"name" : "ClassifierPerformanceEvaluator22"
+			},
+			"connections" : {
+				"text" : [
+					"TextViewer32"
+				]
+			},
+			"coordinates" : "1012,356"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.TextViewer",
+			"properties" : {
+				"name" : "TextViewer222"
+			},
+			"connections" : {
+			},
+			"coordinates" : "851,507"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.Note",
+			"properties" : {
+				"name" : "Note5",
+				"noteText" : "The result after feature selection"
+			},
+			"connections" : {
+			},
+			"coordinates" : "908,599"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.Filter",
+			"properties" : {
+				"filter" : {
+					"type" : "optionHandler",
+					"class" : "weka.filters.unsupervised.attribute.Remove",
+					"options" : "-R 2"
+				},
+				"name" : "Remove"
+			},
+			"connections" : {
+				"dataSet" : [
+					"CrossValidationFoldMaker22",
+					"TextViewer33222"
+				]
+			},
+			"coordinates" : "588,205"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.Note",
+			"properties" : {
+				"name" : "Note72",
+				"noteText" : "Remove the unwanted attributes"
+			},
+			"connections" : {
+			},
+			"coordinates" : "529,183"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.ClassAssigner",
+			"properties" : {
+				"classColumn" : "Wellington_mean",
+				"name" : "ClassAssigner22422"
+			},
+			"connections" : {
+				"dataSet" : [
+					"AttributeSelection22"
+				]
+			},
+			"coordinates" : "394,207"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.Note",
+			"properties" : {
+				"name" : "Note42",
+				"noteText" : "View the dataset after removing the unwanted attribute\n"
+			},
+			"connections" : {
+			},
+			"coordinates" : "369,629"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.Filter",
+			"properties" : {
+				"filter" : {
+					"type" : "optionHandler",
+					"class" : "weka.filters.supervised.attribute.AttributeSelection",
+					"options" : "-E \"weka.attributeSelection.CorrelationAttributeEval \" -S \"weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1\""
+				},
+				"name" : "AttributeSelection22"
+			},
+			"connections" : {
+				"dataSet" : [
+					"TextViewer3322",
+					"Remove"
+				]
+			},
+			"coordinates" : "456,381"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.TextViewer",
+			"properties" : {
+				"name" : "TextViewer3322"
+			},
+			"connections" : {
+			},
+			"coordinates" : "458,527"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.TextViewer",
+			"properties" : {
+				"name" : "TextViewer33222"
+			},
+			"connections" : {
+			},
+			"coordinates" : "597,405"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.TextViewer",
+			"properties" : {
+				"name" : "TextViewer332232"
+			},
+			"connections" : {
+			},
+			"coordinates" : "243,49"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.Filter",
+			"properties" : {
+				"filter" : {
+					"type" : "optionHandler",
+					"class" : "weka.filters.unsupervised.attribute.Normalize",
+					"options" : "-S 500.0 -T 0.0"
+				},
+				"name" : "Normalize"
+			},
+			"connections" : {
+				"dataSet" : [
+					"TextViewer332232",
+					"ClassAssigner22422"
+				]
+			},
+			"coordinates" : "246,219"
+		},
+		{
+			"class" : "weka.knowledgeflow.steps.Note",
+			"properties" : {
+				"name" : "Note73",
+				"noteText" : "Normalize to range 0-500"
+			},
+			"connections" : {
+			},
+			"coordinates" : "213,317"
+		}
+	]
+}
