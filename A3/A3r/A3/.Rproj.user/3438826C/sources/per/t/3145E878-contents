@@ -1,0 +1,273 @@
+trainingset <- read.csv("data3000.csv",header = T)
+testset <- read.csv("test.csv",header = T)
+fullset <- read.csv("full.csv",header=T)
+library(ggplot2)
+library(gridExtra)
+library(corrplot)
+library(randomForest)
+library(ggplot2)
+library(gridExtra)
+library(cowplot)
+library(missForest)
+library(foreach)
+library(iterators)
+library(itertools)
+#str(trainingset)
+fullset$d_age<-as.integer(fullset$d_age)
+#boxplot(trainingset$m_age)
+fullset$m_age<-as.integer(fullset$m_age)
+boxplot(fullset$d_age,fullset$m_age)
+summary(fullset)
+head(fullset)
+k<- sapply( trainingset, as.numeric )
+M <- cor(k)
+dev.new(width=5, height=4)
+cex.before <- par("cex")
+par(cex = 0.6)#change font size
+corrplot::corrplot(M,method="color")
+par(cex = cex.before)
+
+#data preparation using random forest imputation
+set.seed(111)
+fullset$d_work_hours<-as.integer(fullset$d_work_hours)
+fullset$m_work_hours<-as.integer(fullset$m_work_hours)
+fullset$d_years_at_addr_code<-as.integer(fullset$d_years_at_addr_code)
+fullset$m_years_at_addr_code<-as.integer(fullset$m_years_at_addr_code)
+str(fullset)
+for (i in 8:58) fullset.na[sample(7621, sample(0)), i] <- NA
+set.seed(222)
+fullset.imputed<-rfImpute(total_income_hhld_code~.,fullset.na)
+
+print(fullset.rf)
+
+#data prepare:
+data<-read.csv("full.csv",header = T)
+data[data=="?"]<-NA
+str(data)
+data$ch_asian <- as.factor(data$ch_asian)
+data$ch_euro <- as.factor(data$ch_euro)
+data$ch_maori <- as.factor(data$ch_maori)
+data$ch_melaa<-as.factor(data$ch_melaa)
+data$ch_other<-as.factor(data$ch_other)
+data$ch_pacific <- as.factor(data$ch_pacific)
+data$m_income_srce7 <- as.factor(data$m_income_srce7)
+data$m_income_srce8 <- as.factor(data$m_income_srce8)
+data$m_income_srce9 <- as.factor(data$m_income_srce9)
+data$m_income_srce10 <- as.factor(data$m_income_srce10)
+data$m_income_srce11 <- as.factor(data$m_income_srce11)
+data$m_income_srce12 <- as.factor(data$m_income_srce12)
+data$d_income_srce7 <- as.factor(data$d_income_srce7)
+data$d_income_srce8 <- as.factor(data$d_income_srce8)
+data$d_income_srce9 <- as.factor(data$d_income_srce9)
+data$d_income_srce10 <- as.factor(data$d_income_srce10)
+data$d_income_srce11 <- as.factor(data$d_income_srce11)
+data$d_income_srce12 <- as.factor(data$d_income_srce12)
+data$ch_sex <-as.factor(data$ch_sex)
+data$child_depend_family_type_code<-as.factor(data$child_depend_family_type_code)
+data$telecomm1_code<-as.factor(data$telecomm1_code)
+data$telecomm2_code<-as.factor(data$telecomm1_code)
+data$telecomm4_code<-as.factor(data$telecomm1_code)
+data$usual_resdnt_count_code<-as.factor(data$usual_resdnt_count_code)
+data$twin<-as.factor(data$twin)
+data$singparstat<-as.factor(data$singparstat)
+data$m_age<-as.integer(data$m_age)
+data$d_age<-as.integer(data$d_age)
+data$d_work_hour<-as.integer(data$d_work_hour)
+data$m_work_hour<-as.integer(data$m_work_hour)
+data$m_years<-as.integer(data$m_years)
+data$d_years<-as.integer(data$d_years)
+
+str(data)
+head(data)
+set.seed(11)
+colnames(data)<- c(
+  "id",
+  "NZDep",
+  "ch_asian",
+  "ch_euro",
+  "ch_maori",
+  "ch_melaa",
+  "ch_other",
+  "ch_pacific",
+  "m_age",
+  "m_asian",
+  "m_euro",
+  "m_maori",
+  "m_melaa",
+  "m_other",
+  "m_pacific",
+  "m_wklfs",
+  "d_age",
+  "d_asian",
+  "d_euro",
+  "d_maori",
+  "d_melaa",
+  "d_other",
+  "d_pacific",
+  "d_wklfs",
+  "bedroom",
+  "m_years",
+  "m_tenure",
+  "m_edu",
+  "m_work_hour",
+  "m_smoke",
+  "m_income7",
+  "m_income8",
+  "m_income9",
+  "m_income10",
+  "m_income11",
+  "m_income12",
+  "d_years",
+  "d_tenure",
+  "d_edu",
+  "d_work_hour",
+  "d_smoke",
+  "d_income7",
+  "d_income8",
+  "d_income9",
+  "d_income10",
+  "d_income11",
+  "d_income12",
+  "ch_sex",
+  "child_family",
+  "d_family_role",
+  "heat_fuel",
+  "m_family_rol",
+  "telecom1",
+  "telecom2",
+  "telecom4",
+  "usual_resdnt",
+  "twin",
+  "singpar",
+  "total_income",
+  "NA"
+)
+#data.imputed<-rfImpute(NZDep ~.,data=data,iter=6)
+#data.imputed <-rfImpute(ch_asian ~.,data=data,iter=6)
+str(data)
+View(data)
+install.packages("dplyr")
+library(dplyr)
+ncol(data)
+data1<-select(data,1:59)
+View(data1)
+#data.mis<-prodNA(data,noNA=0.1)
+#summary(data.mis)
+data.imp<-missForest(data1)
+data.imp <- missForest(data1, variablewise = TRUE)
+data.imp$OOBerror
+View(data.imp)
+View(data.imp$ximp)
+class(data.imp$ximp)
+data.imp_saver<-data.imp$ximp
+write.csv(data.imp_saver,"Fixed.csv")
+data_clastering<-data.imp
+
+View(data_clastering$ximp)
+data10<-read.csv("fixed.csv",header = T)
+m_age_clastred<- cut(data10$m_age,breaks=c(0,27,35,47),labels=c("1","2","3"))
+data10$m_age<-m_age_clastred
+View(data10)
+
+
+dataneedfix<-read.csv("finalneedfix.csv",header = T)
+data[data=="?"]<-NA
+str(data)
+
+set.seed(11)
+colnames(datafixed)<- c(
+  "id",
+  "NZDep",
+  "ch_asian",
+  "ch_euro",
+  "ch_maori",
+  "ch_melaa",
+  "ch_other",
+  "ch_pacific",
+  "m_age",
+  "m_asian",
+  "m_euro",
+  "m_maori",
+  "m_melaa",
+  "m_other",
+  "m_pacific",
+  "m_wklfs",
+  "d_age",
+  "d_asian",
+  "d_euro",
+  "d_maori",
+  "d_melaa",
+  "d_other",
+  "d_pacific",
+  "d_wklfs",
+  "bedroom",
+  "m_years",
+  "m_tenure",
+  "m_edu",
+  "m_work_hour",
+  "m_smoke",
+  "m_income7",
+  "m_income8",
+  "m_income9",
+  "m_income10",
+  "m_income11",
+  "m_income12",
+  "d_years",
+  "d_tenure",
+  "d_edu",
+  "d_work_hour",
+  "d_smoke",
+  "d_income7",
+  "d_income8",
+  "d_income9",
+  "d_income10",
+  "d_income11",
+  "d_income12",
+  "ch_sex",
+  "child_family",
+  "d_family_role",
+  "heat_fuel",
+  "m_family_rol",
+  "telecom1",
+  "telecom2",
+  "telecom4",
+  "usual_resdnt",
+  "twin",
+  "singpar",
+  "total_income"
+)
+#data prepare:
+datafixed$ch_asian <- as.factor(datafixed$ch_asian)
+datafixed$ch_euro <- as.factor(datafixed$ch_euro)
+datafixed$ch_maori <- as.factor(datafixed$ch_maori)
+datafixed$ch_melaa<-as.factor(datafixed$ch_melaa)
+datafixed$ch_other<-as.factor(datafixed$ch_other)
+datafixed$ch_pacific <- as.factor(datafixed$ch_pacific)
+datafixed$m_income7 <- as.factor(datafixed$m_income7)
+datafixed$m_income8 <- as.factor(datafixed$m_income8)
+datafixed$m_income9 <- as.factor(datafixed$m_income9)
+datafixed$m_income10 <- as.factor(datafixed$m_income10)
+datafixed$m_income11 <- as.factor(datafixed$m_income11)
+datafixed$m_income12 <- as.factor(datafixed$m_income12)
+datafixed$d_income7 <- as.factor(datafixed$d_income7)
+datafixed$d_income8 <- as.factor(datafixed$d_income8)
+datafixed$d_income9 <- as.factor(datafixed$d_income9)
+datafixed$d_income10 <- as.factor(datafixed$d_income10)
+datafixed$d_income11 <- as.factor(datafixed$d_income11)
+datafixed$d_income12 <- as.factor(datafixed$d_income12)
+datafixed$ch_sex <-as.factor(datafixed$ch_sex)
+datafixed$child_family<-as.factor(datafixed$child_family)
+datafixed$telecom1<-as.factor(datafixed$telecom1)
+datafixed$telecom2<-as.factor(datafixed$telecom2)
+datafixed$telecom4<-as.factor(datafixed$telecom4)
+datafixed$usual_resdnt<-as.factor(datafixed$usual_resdnt)
+datafixed$twin<-as.factor(datafixed$twin)
+datafixed$singpar<-as.factor(datafixed$singpar)
+datafixed$m_age<-as.integer(datafixed$m_age)
+datafixed$d_age<-as.integer(datafixed$d_age)
+datafixed$d_work_hour<-as.integer(datafixed$d_work_hour)
+datafixed$m_work_hour<-as.integer(datafixed$m_work_hour)
+datafixed$m_years<-as.integer(datafixed$m_years)
+datafixed$d_years<-as.integer(datafixed$d_years)
+View(datafixed)
+data_clastering

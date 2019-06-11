@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1536390527567.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "377851423",
+    "id" : "CC278398",
+    "lastKnownWriteTime" : 1536745239,
+    "last_content_update" : 1536745239449,
+    "path" : "C:/Users/vince/Desktop/COMP309/A3r/final.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "16,9",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

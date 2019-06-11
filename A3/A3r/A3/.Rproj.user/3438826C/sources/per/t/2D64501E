@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1536675294611.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2D64501E",
+    "lastKnownWriteTime" : 18859025310417007,
+    "last_content_update" : 1536675294611,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "4D938595",
+        "caption" : "dataknn",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=dataknn&cache_key=4D938595",
+        "displayedObservations" : 7621,
+        "environment" : "",
+        "object" : "dataknn",
+        "preview" : 0,
+        "totalObservations" : 7621,
+        "variables" : 59
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
